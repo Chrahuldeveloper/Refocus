@@ -1,1 +1,1 @@
-console.log("file injected into the website")
+console.log("code injected ")
