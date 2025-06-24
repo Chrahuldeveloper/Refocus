@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 360px;
+  padding: 20px;
+  background-color: #f9fafb;
+  color: #1f2937;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  width: 97vw;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #1f2937;
+}
+
+.logo-icon {
+  width: 28px;
+  height: 28px;
+  background: linear-gradient(135deg, #8b5cf6, #a78bfa);
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.settings-icon {
+  width: 18px;
+  height: 18px;
+  background-color: #e5e7eb;
+  border-radius: 4px;
+}
+
+.section-title {
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+}
+
+.section-description {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-bottom: 16px;
+}
+
+.toggle-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 12px;
+}
+
+.toggleswitch {
+  position: relative;
+  display: inline-block;
+  width: 44px;
+  height: 24px;
+}
+
+.toggleswitch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #e5e7eb;
+  transition: 0.3s;
+  border-radius: 34px;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.3s;
+  border-radius: 50%;
+}
+
+.toggleswitch input:checked + .slider {
+  background-color: #8b5cf6;
+}
+
+.toggleswitch input:checked + .slider::before {
+  transform: translateX(20px);
+}
+
+.tip {
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+  margin-top: 12px;
+}
+
+.tip-text {
+  font-size: 0.85rem;
+  color: #4b5563;
+  line-height: 1.5;
+}
+
+/* Footer */
+.footer {
+  margin-top: 20px;
+  font-size: 0.8rem;
+  text-align: center;
+  color: #9ca3af;
+  padding-top: 10px;
+  border-top: 1px solid #e5e7eb;
+}
