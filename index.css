@@ -1,23 +1,26 @@
 * {
   box-sizing: border-box;
-  font-family: 'Segoe UI', 'Inter', sans-serif;
+  font-family: "Segoe UI", "Inter", sans-serif;
   margin: 0;
   padding: 0;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 body {
-  width: 360px;
   padding: 20px;
-  background-color: #f9fafb;
   color: #1f2937;
+  background-color: #fff;
 }
 
 .card {
   background-color: #fff;
   border-radius: 12px;
   padding: 20px;
-  width: 97vw;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  width: 92vw;
+  margin: 0px auto;
 }
 
 .card-header {
@@ -66,8 +69,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
   gap: 12px;
+  margin-top: 20px;
 }
 
 .toggleswitch {
@@ -117,15 +120,17 @@ body {
 
 .tip {
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   margin-bottom: 6px;
   margin-top: 12px;
+  text-align: center;
 }
 
 .tip-text {
-  font-size: 0.85rem;
+  font-size: 0.7rem;
   color: #4b5563;
   line-height: 1.5;
+  text-align: center;
 }
 
 /* Footer */
