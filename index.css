@@ -12,11 +12,11 @@
 body {
   padding: 20px;
   color: #1f2937;
-  background-color: #fff;
+  background-color: #020817;
 }
 
 .card {
-  background-color: #fff;
+  background-color: #020817;
   border-radius: 12px;
   padding: 20px;
   width: 92vw;
@@ -35,13 +35,13 @@ body {
   align-items: center;
   font-weight: 600;
   font-size: 1.1rem;
-  color: #1f2937;
+  color: white;
 }
 
 .logo-icon {
   width: 28px;
   height: 28px;
-background: linear-gradient(135deg, #ef4444, #f87171);
+  background: linear-gradient(135deg, #ef4444, #f87171);
   border-radius: 50%;
   margin-right: 8px;
 }
@@ -57,6 +57,7 @@ background: linear-gradient(135deg, #ef4444, #f87171);
   font-weight: 600;
   font-size: 0.95rem;
   margin-bottom: 4px;
+  color: white;
 }
 
 .section-description {
@@ -93,7 +94,7 @@ background: linear-gradient(135deg, #ef4444, #f87171);
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #e5e7eb;
+  background-color: #1e293b; 
   transition: 0.3s;
   border-radius: 34px;
 }
@@ -105,16 +106,16 @@ background: linear-gradient(135deg, #ef4444, #f87171);
   width: 18px;
   left: 3px;
   bottom: 3px;
-  background-color: white;
+  background-color: black;
   transition: 0.3s;
   border-radius: 50%;
 }
 
-.toggleswitch input:checked + .slider {
-  background-color: #8b5cf6;
+.toggleswitch input:checked+.slider {
+  background-color: white;
 }
 
-.toggleswitch input:checked + .slider::before {
+.toggleswitch input:checked+.slider::before {
   transform: translateX(20px);
 }
 
@@ -133,7 +134,6 @@ background: linear-gradient(135deg, #ef4444, #f87171);
   text-align: center;
 }
 
-/* Footer */
 .footer {
   margin-top: 20px;
   font-size: 0.8rem;
@@ -141,4 +141,21 @@ background: linear-gradient(135deg, #ef4444, #f87171);
   color: #9ca3af;
   padding-top: 10px;
   border-top: 1px solid #e5e7eb;
+}
+
+
+.bottom-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  gap: 5px;
+}
+
+.section-description-bottom {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #6b7280;
+
 }
